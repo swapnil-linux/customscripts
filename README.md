@@ -9,4 +9,10 @@ I am lazy when it comes to doing the same again and again, and this encourages m
 ## find_aws-region.py
 - I use this to find the AWS region a IP belongs to
 - Usage: `python3 find_aws-region.py <IP>`
-- update ip-rages.json from https://ip-ranges.amazonaws.com/ip-ranges.json before use
+- update ip-ranges.json from https://ip-ranges.amazonaws.com/ip-ranges.json before use
+
+## openvpn_status.sh
+- Display connected OpenVPN users from /var/log/openvpn/status.log
+
+## bad_freeipa_users.sh
+- This will print a list of active FreeIPA/RedHat IDM users who does not have OTP Token enabled.
