@@ -1,5 +1,5 @@
 # My Custom Scripts for Everyone ;)
-I am lazy when it comes to doing the same again and again, and this encourages me to create these teeny-tiny scripts. :)
+I am lazy when it comes to doing the same again and again, and it encourages me to create these teeny-tiny scripts. :) don't expect it to be immaculate, clean or excellent. It does what it is meant to do.
 
 ## checkheaders.sh  
 - I use this to check HTTP headers, SSL Ciphers and detect WAF
