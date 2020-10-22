@@ -16,3 +16,6 @@ I am lazy when it comes to doing the same again and again, and this encourages m
 
 ## bad_freeipa_users.sh
 - This will print a list of active FreeIPA/RedHat IDM users who does not have OTP Token enabled.
+
+## checkip_country.sh
+- This will print your Internet IP and the country it belongs to.
