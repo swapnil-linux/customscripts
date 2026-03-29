@@ -31,3 +31,25 @@ I am lazy when it comes to doing the same again and again, and it encourages me 
 - Print your public Internet IP with geolocation info (country, region, city, ISP, ASN)
 - Usage: `./checkip_country.sh`
 - Falls back to `whois` if ip-api.com is unreachable or python3 is unavailable
+
+## check_tls_cert.sh
+- Inspect a TLS certificate: expiry, SANs, signature algorithm, key size, chain completeness
+- Checks for deprecated protocol support (TLS 1.0/1.1), self-signed certs, and weak crypto
+- Usage: `./check_tls_cert.sh <FQDN> [port]`
+- Default port: 443
+- Example: `./check_tls_cert.sh google.com`
+- Requires: `openssl`, `python3`
+
+## dns_recon.sh
+- DNS reconnaissance: A/AAAA/MX/NS/TXT/SOA records, SPF/DMARC/DKIM checks, DNSSEC, zone transfer attempt
+- Usage: `./dns_recon.sh <domain>`
+- Example: `./dns_recon.sh example.com`
+- Requires: `dig`
+
+## http_security_config.sh
+- HTTP security misconfiguration checks: dangerous methods, missing security headers,
+  CORS misconfiguration, server banner leakage, cookie security flags, HTTP→HTTPS redirect
+- Usage: `./http_security_config.sh <FQDN|IP> [port]`
+- Default port: 443 (https). Port 80 uses http.
+- Example: `./http_security_config.sh example.com`
+- Requires: `curl`
